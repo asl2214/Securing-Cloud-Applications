@@ -1,4 +1,4 @@
-![Project_1](Project%201%20Technical%20Debrief.pdf)
+![Project 1 Technical Brief](Project%201%20Technical%20Debrief.pdf)
 
 ## Summary
 
