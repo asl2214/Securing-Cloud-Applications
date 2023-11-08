@@ -1,12 +1,27 @@
-# Overview
+## Summary
 
-![..](Images/Azure%20Cloud%20Security%20Network.png)
+This project was to present skills that were learned in using Microsoft Azure. I made a separate cybersecurity blog with the "added" feature of an SSL certificate and Azure's security features.  
 
-## Topology
-The diagram's purpose is to show the flow of an Azure Cloud Security Network created from scratch on Microsoft Azure. To connect to the DVWA (D*am Vulnerable Web Application) containers, the network would first connect to the internet from the user's computer or device, then bypass through the security group firewall based on its rules set for inbound traffic of the virtual network with the subnet range of 10.0.0.0/16, and then bypass the load balancer. The load balancer would restrict access to the network when connecting to the jumpbox provisoner for access to the DVWA containers. A security firewall was set to allow specific inbound and outbound rules while load balancing ensured to maximize network capacity and high performance. The firewall would prevent unknown IP addresses from trying to access the web containers and the load balancer is used to prevent DDoS (Distributed Denial of Service) attacks and server failure. 
+## Requirements
 
-| Name	| Function |	IP Address	| Operating System |
-| --- | --- | --- | --- |
-|Jump Box |	Gateway |	10.0.0.4	| Linux | 
-| Web-1 |	container |	10.0.0.5 |	Linux |
-| Web-2 |	container |	10.0.0.6 |	Linux |
+
++ Hosting the web application using Azure’s Cloud Services
++ Using Azure’s App Service resource to create the web application
++ Choosing a domain with “godaddy or Azure” (choose what you selected)
++ Deploying a Docker container which had a framework for a blog webpage
++ SSHing  into the container to customize the webpage
++ Creating a Self-signed certificate with OpenSSL 
++ Storing the certificate in Azure’s Key vault
++ ~~Binding the certificate to the website~~ (*this line is crossed out as the self-signed cert could not be applied to the free website created on azure*)
++ After determining the security issues with a self-signed certificate, creating and binding a managed CA approved certificate to the web application
++ Deploying Azure’s Front Door, and configuring a WAF rule to restrict traffic from certain countries
++ Analyzing the Azure’s Security Center recommendations and applying the recommended fix
+
+## Key Notes
+
++ self-signed certificates will never be trusted as it's not as secure compared to a Certificate Authority (CA)
++ TLS is a better and improved version of an SSL
++ Azure's Front Door was used to apply a Web Application Firewall (WAF) so that US, Australia, and Canada can access the site
++ Azure Security Center provides mitigation recommendations and best practices
+  1. change FTP to its encrypted version FTPS
+ 
