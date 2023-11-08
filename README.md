@@ -1,3 +1,5 @@
+![Project_1](Project%201%20Technical%20Debrief.pdf)
+
 ## Summary
 
 This project was to present skills that were learned in using Microsoft Azure. I made a separate cybersecurity blog with the "added" feature of an SSL certificate and Azure's security features.  
