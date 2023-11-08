@@ -12,7 +12,7 @@ This project was to present skills that were learned in using Microsoft Azure. I
 + SSHing  into the container to customize the webpage
 + Creating a Self-signed certificate with OpenSSL 
 + Storing the certificate in Azure’s Key vault
-+ ~~Binding the certificate to the website~~ (*this line is crossed out as the self-signed cert could not be applied to the free website created on azure*)
++ ~~Binding the certificate to the website~~ (*this line is crossed out as the self-signed cert could not be applied to the free website created on azure for my project*)
 + After determining the security issues with a self-signed certificate, creating and binding a managed CA approved certificate to the web application
 + Deploying Azure’s Front Door, and configuring a WAF rule to restrict traffic from certain countries
 + Analyzing the Azure’s Security Center recommendations and applying the recommended fix
